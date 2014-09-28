@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width; user-scalable=0;" />
+<title>My HTML</title>
+</head>
+<body>
+<h3 id="contact_detail">Name</h3>
+<p id="phone">Phone!</p>
+<p id="email">Email!</p>
+<input type="button" value="Close" onClick="close()" />
+<input type="button" value="Get Random Address" onClick="getRandomAddress()" />
+<script language="javascript">
+   function close() {
+       JSInterface.exit();
+   }
+
+   function getRandomAddress() {
+       JSInterface.getRandomAddress();
+   }
+  
+   function updateName(msg){
+       document.getElementById("contact_detail").innerHTML = msg;
+   }
+   
+   function updatePhone(msg){
+       document.getElementById("phone").innerHTML = msg;
+   }
+   
+   function updateEmail(msg){
+       document.getElementById("email").innerHTML = msg;
+   }
+   
+</script>
+
+</body>
+</html>
